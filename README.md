@@ -30,7 +30,7 @@ O **SalesInsight PY** é um projeto de análise e visualização de dados de ven
 ## ⚙️ Como Executar o Projeto
 
 ### Pré-requisitos
-- Python 3.10 ou superior instalado.
+- Python 3.x ou ambiente Google Colab.
 - Gerenciador de pacotes `pip`.
 
 ### 1. Clonar o Repositório
