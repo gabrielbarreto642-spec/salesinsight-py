@@ -76,8 +76,6 @@ df_bruto = gerar_dataset_vendas()
 df_bruto.to_csv("vendas.csv", index=False)
 print(f"Dataset gerado com {len(df_bruto)} registros.")
 print(df_bruto.head())
-df_limpo, relatorio_limpeza = limpar_dados(df_bruto)
-df_limpo = criar_colunas_derivadas(df_limpo)
 
 def inspecionar_dados(df):
     """Exibe as informacoes estruturais do DataFrame."""
@@ -279,15 +277,23 @@ def calcular_estatisticas_numpy(df):
         "qtd_acima_da_media": len(acima_da_media),
     }
 
+# 1. Primeiro limpamos os dados brutos(df_bruto) para criar o df_limpo
+df_limpo, relatorio = limpar_dados(df_bruto)
+
+# 2. Agora com o df_limpo, criamos as colunas derivadas
+df_limpo = criar_colunas_derivadas(df_limpo)
+
+# 3. Caluculamos as estatísticas com numpy
 estatisticas = calcular_estatisticas_numpy(df_limpo)
-# 2. Segmentação de Clientes (Bronze, Prata, Ouro)
+
+# 4. Segmentação de Clientes (Bronze, Prata, Ouro)
 df_clientes = segmentar_clientes(df_limpo)
 
-# 3. Mostrar os 10 maiores clientes (RF06)
+# 5. Mostrar os 10 maiores clientes (RF06)
 print("\n--- TOP 10 MAIORES CLIENTES ---")
 print(df_clientes.head(10))
 
-# 4. Mostrar contagem por segmento
+# 6. Mostrar contagem por segmento
 print("\n--- DISTRIBUIÇÃO POR SEGMENTO ---")
 print(df_clientes["segmento"].value_counts())
 
