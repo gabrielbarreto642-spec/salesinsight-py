@@ -41,4 +41,4 @@ cd salesinsight-py
 
 ## 🎥 Vídeo de Demonstração
 Assista ao vídeo de apresentação.  
-👉 [Assistir ao Vídeo de Demonstração](https://drive.google.com/file/d/1B0fCZ_Z75F1Y_yIriKjWJUqyTL2eDfwo/view?usp=sharing)
+👉 [Assistir ao Vídeo de Demonstração]:https://drive.google.com/file/d/1B0fCZ_Z75F1Y_yIriKjWJUqyTL2eDfwo/view?usp=sharing
