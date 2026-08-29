@@ -37,3 +37,8 @@ O **SalesInsight PY** é um projeto de análise e visualização de dados de ven
 ```bash
 git clone [https://github.com/gabrielbarreto642-spec/salesinsight-py.git](https://github.com/gabrielbarreto642-spec/salesinsight-py.git)
 cd salesinsight-py
+---
+
+## 🎥 Vídeo de Demonstração
+Assista ao vídeo de apresentação.  
+👉 [Assistir ao Vídeo de Demonstração](https://drive.google.com/file/d/1B0fCZ_Z75F1Y_yIriKjWJUqyTL2eDfwo/view?usp=sharing)
